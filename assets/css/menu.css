@@ -1,0 +1,105 @@
+* {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    outline: 0;
+  }
+  body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+  }
+  h1 { text-align:center; padding:50px 0; color:#fff;}
+  a {
+    color: #fff;
+    text-decoration: none;
+  }
+  ul { list-style: none; }
+  .nav {
+    /* background: #0275d8; */
+    min-height: 100px;
+    position: absolute;
+    width: 100%;
+    z-index: 999;
+  }
+  .nav .left {
+    float: left;
+    margin-left: 1em;
+  }
+  .nav .left li {
+    /* border-bottom: 1px solid #ED5565; */
+    font-size: 14px;
+    float: left;
+  }
+  .nav .left li a {
+    display: block;
+    padding: 10px 15px;
+    line-height: 30px;
+    font-weight: bold;
+  }
+  .nav .left li a:hover { background:#ED5565; }
+  .nav .right {
+    float: right;
+    margin-right: 1em;
+    margin-top: 50px;
+  }
+  .nav .right li {
+    /* border-bottom: 1px solid #ED5565; */
+    font-size: 14px;
+    float: left;
+  }
+  .nav .right li a {
+    display: block;
+    padding: 10px 15px;
+    line-height: 30px;
+  }
+  .nav .right li a:hover { color: #ef5438;font-weight: bold; }
+  .toggle-nav { display: none; }
+  .nav-mobile style { display: block;margin-top:22px; }
+  .logo{
+    width:95px;
+  }
+    
+  
+  
+  /* Style Sheet For Mobiel Template */
+  @media only screen and (max-width: 768px) {
+    .nav { 
+      /* border-bottom: 1px solid rgba(0,0,0,0.1); */
+      min-height: 50px;
+    }
+    .logo{
+      width:60px;
+    }
+    .toggle-nav {
+      display: block; 
+      padding: 10px;
+      position: absolute;
+      right: 10px;
+      line-height: 30px;
+      margin-top: 13px;
+    }
+    .toggle-nav:after { content: ' Menu'; }
+    
+    .nav-mobile { display: none;margin-top:22px;z-index: 999; }
+    .style-mobile {
+      background: #DA4453;
+      top : 51px;
+      position : absolute;
+      width : 100%;
+    }
+    .style-mobile li {
+      display: block;
+      width: 100%;
+    }
+    .nav .right {
+      display: block;
+      float: none;
+      margin: 0em;
+    }
+    .nav .left {
+      display: block;
+      float: none;
+      margin: 0em;
+    }
+  }
+    

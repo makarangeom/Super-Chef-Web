@@ -1,0 +1,153 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery nav-mobile.js Demo</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/menu.css"/>
+
+    <!-- Style Sheet for Slideshow Parallax -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/slideshow_parallax.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="nav">
+        <a class="toggle-nav" href="#">&#9776;</a>
+        <div class="left col-md-12" style="display: block;
+            padding: 10px 15px;">
+                <img class="logo" src="http://www.logospng.com/images/14/restaurant-logo-png-14000.png" alt="Hot Restaurant">
+        </div>
+        <div class="nav-mobile">
+            
+            <ul class="right">
+                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#"><i class="fa fa-book"></i> Categoriesw</a></li>
+                <li><a href="#"><i class="fa fa-fire"></i> Most Popular</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="main-content">
+        <section class="slideshow">
+          <div class="slideshow-inner">
+            <div class="slides">
+              <div class="slide is-active ">
+                <div class="slide-content">
+                  <div class="caption">
+                    <div class="title">Slide title 1</div>
+                    <div class="text">
+                      <p>Slide description 1</p>
+                    </div> 
+                    <a href="#" class="btn">
+                      <span class="btn-inner">Learn More</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="image-container"> 
+                  <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-1.jpg" alt="" class="image" />
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="caption">
+                    <div class="title">Slide title 2</div>
+                    <div class="text">
+                      <p>Slide description 2</p>
+                    </div> 
+                    <a href="#" class="btn">
+                      <span class="btn-inner">Learn More</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="image-container">
+                  <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-4-1.jpg" alt="" class="image" />
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="caption">
+                    <div class="title">Slide title 3</div>
+                    <div class="text">
+                      <p>Slide description 3</p>
+                    </div> 
+                    <a href="#" class="btn">
+                      <span class="btn-inner">Learn More</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="image-container">
+                  <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2016/11/11.jpg" alt="" class="image" />
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-content">
+                  <div class="caption">
+                    <div class="title">Slide title 4</div>
+                    <div class="text">
+                      <p>Slide description 4</p>
+                    </div> 
+                    <a href="#" class="btn">
+                      <span class="btn-inner">Learn More</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="image-container"> 
+                  <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-4-1.jpg" alt="" class="image" />
+                </div>
+              </div>
+            </div>
+            <div class="pagination justify-content-center">
+              <div class="item is-active"> 
+                <span class="icon">1</span>
+              </div>
+              <div class="item">
+                <span class="icon">2</span>
+              </div>
+              <div class="item">
+                <span class="icon">3</span>
+              </div>
+              <div class="item">
+                <span class="icon">4</span>
+              </div>
+            </div>
+            <div class="arrows">
+              <div class="arrow prev">
+                <span class="svg svg-arrow-left">
+                  <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+                  <span class="alt sr-only"></span>
+                </span>
+              </div>
+              <div class="arrow next">
+                <span class="svg svg-arrow-right">
+                  <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+                  <span class="alt sr-only"></span>
+                </span>
+              </div>
+            </div>
+          </div> 
+        </section>
+      </main>
+    <!-- Script For Bootstrap 4 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <!-- Script For Menu -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+
+    <!-- Script For Slideshow Parallax  -->
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+    <script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+    <script src="assets/js/slideshow_parallax.js"></script>
+</body>
+</html>
