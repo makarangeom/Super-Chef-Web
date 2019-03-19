@@ -45,10 +45,10 @@
     display: block;
     padding: 10px 15px;
     line-height: 30px;
-    text-decoration: none;
+    text-decoration: none; 
     color: #fff;
   }
-  .nav .right li a:hover { border-bottom: 2px solid #ef5438;}
+  .nav .right li a:hover { border-bottom: 2px solid #ef5438; }
   .toggle-nav { display: none; z-index: 1; }
   .nav-mobile style { display: block;margin-top:22px; }
   .logo{
@@ -60,16 +60,14 @@
   .btn:hover .btn-inner{
     color: #ED5565;
   }
-  .float-right {
-
+.float-right {
     float: right !important;
-
 }
 
-/* StyleSheet for change menu when scrolling */
+/* StyleSheet change style when scrolling */
 .fixed-menu {
   background-color: rgba(0, 0, 0, 0.85);
-  min-height: 50px;
+  min-height: 88px;
 }
 .fixed-menu .right {
   float: right;
@@ -78,6 +76,24 @@
 }
 .fixed-menu .left .logo {
   width: 70px;
+}
+
+/* For sub menu dropdown */
+.nav .right li ul li{
+  display: none;
+}
+.nav .right li:hover ul li{
+  display: block;
+position: relative;
+float: none;
+}
+.nav .right li:hover ul li a{
+  line-height: 10px;
+}
+
+/* For active menu */
+.active {
+  border-bottom: 2px solid #ef5438;
 }
     
   

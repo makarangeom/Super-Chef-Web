@@ -21,14 +21,13 @@
     <!-- Style Sheet For Popular Products List -->
     <link rel="stylesheet" href="assets/css/products.css">
 
-    <!-- Style Sheet for Sponsor Logo -->
-    <link rel="stylesheet" href="assets/css/sponsor.css">
-
     <!-- Style Sheet For Fontawesome 5 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 
     <!-- Style Sheet For Parallax Background Image 4-->
     <link rel="stylesheet" href="assets/css/parallax_background.css">
+
+    <link rel="stylesheet" href="assets/css/sponsor.css">
 
     <!-- Style Sheet For Footer -->
     <link rel="stylesheet" href="assets/css/footer.css">
@@ -48,11 +47,19 @@
           <img class="logo" src="http://www.logospng.com/images/14/restaurant-logo-png-14000.png" alt="Hot Restaurant">
         </div>
         <div class="nav-mobile float-md-right col-md-8">
-            <ul class="right float-md-right">
-                <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fa fa-book"></i> About</a></li>
-                <li><a href="#"><i class="fa fa-fire"></i> Contact</a></li>
-                <li><a href="#"><i class="fa fa-fire"></i> Category</a></li>
+            <ul class="right float-md-right" id="menu">
+                <li class="a-menu active"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                <li class="a-menu"><a href="#"><i class="fas fa-user-tie"></i> About</a></li>
+                <li class="a-menu"><a href="#"><i class="fa fa-book"></i> Contact</a></li>
+                <li class="a-menu"><a href="#"><i class="fas fa-th"></i> Category</a>
+                  <ul>
+                    <li><a href="#">Soup</a></li>
+                    <li><a href="#">Fry</a></li>
+                    <li><a href="#">Roast</a></li>
+                    <li><a href="#">Dessert</a></li>
+                    <li><a href="#">Other</a></li>
+                  </ul>
+                </li>
             </ul>
         </div>
     </nav>
@@ -313,7 +320,7 @@
                   </div>
                 </div>
 
-                <!-- <div class="col-md-6 slide">
+                <div class="col-md-6 slide">
                     <div class="post-contain">
                       <div class="post-image" style="background-image:url('https://unsplash.it/500/300?image=0');">
                         <h2><a class="latest-hover" href=""><i class="fas fa-play-circle"></i></a></h2>
@@ -339,7 +346,7 @@
                         <p class="pm-news-post-continue"><a href="packed-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons/index.html">Continue Reading →</a></p>
                       </div>
                     </div>
-                </div> -->
+                </div>
             </div> 
           </div>
         </section>
@@ -425,6 +432,9 @@
     <!-- Script For Popular Products List  -->
     <script src="assets/css/products_list.js"></script>
 
+    <!-- Script For Latest Post Products -->
+    <script src="assets/js/sponsor.js"></script>
+
     <!-- Script For Slideshow Parallax  -->
     <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
@@ -432,15 +442,23 @@
     <script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
     <script src="assets/js/slideshow_parallax.js"></script>
 
-    <!-- Script Logo Sponsor By -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
-    <script src="assets/js/sponsor.js"></script>
-
     <!-- Script For Parallax Background  -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.29/skrollr.min.js'></script>
     <script id="rendered-js" >
       var s = skrollr.init();
       //# sourceURL=pen.js
     </script>
+    <script>
+      // Add active class to the current button (highlight it)
+      var header = document.getElementById("menu");
+      var btns = header.getElementsByClassName("a-menu");
+      for (var i = 0; i < btns.length; i++) {
+        btns[i].addEventListener("click", function() {
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+        });
+      }
+      </script>
 </body>
 </html>
