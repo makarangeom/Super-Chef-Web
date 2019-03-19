@@ -1,0 +1,36 @@
+.accelerate, .parallax .pllax-bk {
+    tranform: translateZ(0);
+    backface-visibility: hidden;
+    perspective: 1000;
+  }
+  .parallax{
+      padding: 100px 0px 100px 0px;
+  }
+  .parallax .content {
+    color: #bbb;
+    line-height: 2em;
+  }
+  .parallax .pllax-bk {
+    background: url("http://wp.microthemes.ca/vienna/wp-content/uploads/2016/11/chef-column.jpg") no-repeat;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    z-index: -1;
+    position: absolute;
+  }
+
+
+/* Style Sheet For Mobiel Template */
+@media only screen and (max-width: 768px) {
+    .parallax{
+        padding: 0px 0px 100px 0px;
+    }
+    .parallax .pllax-bk {
+        background: url("http://wp.microthemes.ca/vienna/wp-content/uploads/2016/11/chef-column.jpg") no-repeat;
+        width: 100%;
+        height: 940px;
+        background-size: cover;
+        z-index: -1;
+        position: absolute;
+      }
+}

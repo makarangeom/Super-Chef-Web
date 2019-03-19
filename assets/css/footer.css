@@ -1,0 +1,260 @@
+.footer-background{
+    background: url("http://wp.microthemes.ca/vienna/wp-content/uploads/2016/11/chef-column.jpg") no-repeat;
+    width: 100%;
+    height: 500px;
+    background-size: cover;
+    /* z-index: -1; */
+    /* position: absolute; */
+    padding-top: 50px;
+}
+.desc img{
+    text-align: center;
+    width: 110px;
+}
+.desc p{
+    color: #d19a03;
+    margin-bottom: 0rem;
+}
+.desc a{
+    color: #fff;
+}
+.desc a:hover{
+    color: #fff;
+}
+.power-by{
+    padding-top: 58px;
+    color: #d19a03;
+}
+.cat p{
+    color: #fff;
+    margin-bottom: 0rem;
+}
+.footer-cat{
+    color: #d19a03;
+    margin-bottom: .5rem;
+    padding-bottom: .8rem;
+    margin-bottom: 10px;
+    font-weight: 500;
+    line-height: 1.2;
+    border-bottom: 2px dotted #d19a03;
+}
+.app{
+    text-align: center;
+}
+.app .main{
+    width: 100%;
+}
+.app img{
+    width: 200px;
+    padding-bottom: 15px;
+    text-align: center;
+}
+.divide-footer{
+    border: 1px solid #fff;
+    margin: 30px 0px 30px 0px;
+}
+
+/* For Social Media */
+a.btn-social,
+.btn-social
+{
+    border-radius: 50%;
+    color: #ffffff !important;
+    display: inline-block;
+    height: 54px;
+    line-height: 54px;
+    margin: 8px 4px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color .3s;
+    webkit-transition: background-color .3s;
+    width: 54px;
+}
+
+.btn-social .fa,.btn-social i
+{
+    backface-visibility: hidden;
+    moz-backface-visibility: hidden;
+    ms-transform: scale(1);
+    o-transform: scale(1);
+    transform: scale(1);
+    transition: all .25s;
+    webkit-backface-visibility: hidden;
+    webkit-transform: scale(1);
+    webkit-transition: all .25s;
+}
+.btn-social:hover,.btn-social:focus
+{
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+.btn-social:hover .fa,.btn-social:focus .fa,.btn-social:hover i,.btn-social:focus i
+{
+    ms-transform: scale(1.3);
+    o-transform: scale(1.3);
+    transform: scale(1.3);
+    webkit-transform: scale(1.3);
+}
+.btn-social.btn-xs
+{
+    font-size: 9px;
+    height: 24px;
+    line-height: 13px;
+    margin: 6px 2px;
+    width: 24px;
+}
+.btn-social.btn-sm
+{
+    font-size: 13px;
+    height: 36px;
+    line-height: 18px;
+    margin: 6px 2px;
+    width: 36px;
+}
+.btn-social.btn-lg
+{
+    font-size: 22px;
+    height: 72px;
+    line-height: 40px;
+    margin: 10px 6px;
+    width: 72px;
+}
+.mobile-power-by{
+    display: none;
+}
+
+.btn-footer
+{
+    background-color: #d19a03;
+}
+.btn-footer:hover
+{
+    background-color: #fbb904;
+}
+.btn-bitbucket
+{
+    background-color: #205081;
+}
+.btn-bitbucket:hover
+{
+    background-color: #2a69aa;
+}
+.btn-codepen
+{
+    background-color: #76daff;
+}
+.btn-codepen:hover
+{
+    background-color: #a9e8ff;
+}
+.btn-deviantart
+{
+    background-color: #4e6252;
+}
+.btn-deviantart:hover
+{
+    background-color: #657e6a;
+}
+.btn-digg
+{
+    background-color: #000;
+}
+.btn-digg:hover
+{
+    background-color: #1a1a1a;
+}
+
+
+
+/* Style Sheet For Mobiel Template */
+@media only screen and (max-width: 1210px) {
+    .footer-background{
+        background: url("http://wp.microthemes.ca/vienna/wp-content/uploads/2016/11/chef-column.jpg") no-repeat;
+        width: 100%;
+        height: 575px;
+        background-size: cover;
+        /* z-index: -1; */
+        /* position: absolute; */
+        padding-top: 50px;
+    }
+    .desc{
+        margin-bottom: 30px;
+    }
+    .power-by{
+        padding-top: 58px;
+        color: #d19a03;
+        display: none;
+    }
+    .mobile-power-by{
+        display: block;
+        padding-top: 30px;
+        color: #d19a03;
+        text-align: center;
+    }
+    .app .main{
+        width: 100%;
+        margin-top: 30px;
+    }
+}
+
+/* Style Sheet For Mobiel Template */
+@media only screen and (max-width: 1005px) {
+    .footer-background{
+        height: 635px;
+    }
+}
+
+/* Style Sheet For Mobiel Template */
+@media only screen and (max-width: 780px) {
+    .footer-background{
+        height: 950px;
+    }
+}
+
+/* Style Sheet For Mobiel Template */
+@media only screen and (max-width: 495px){
+    .footer-background{
+        height: 950px;
+    }
+}
+
+/* Style Sheet For Mobiel Template */
+@media only screen and (max-width: 380px){
+    .footer-background{
+        height: 1050px;
+    }
+}
+
+/* Pulse Grow */
+@-webkit-keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  @keyframes hvr-pulse-grow {
+    to {
+      -webkit-transform: scale(1.1);
+      transform: scale(1.1);
+    }
+  }
+  .hvr-pulse-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  }
+  .hvr-pulse-grow:hover, .hvr-pulse-grow:focus, .hvr-pulse-grow:active {
+    -webkit-animation-name: hvr-pulse-grow;
+    animation-name: hvr-pulse-grow;
+    -webkit-animation-duration: 0.3s;
+    animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    animation-direction: alternate;
+  }

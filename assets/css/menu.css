@@ -4,26 +4,19 @@
     padding: 0;
     outline: 0;
   }
-  body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
-  }
-  h1 { text-align:center; padding:50px 0; color:#fff;}
-  a {
-    color: #fff;
-    text-decoration: none;
-  }
-  ul { list-style: none; }
   .nav {
     /* background: #0275d8; */
     min-height: 100px;
     position: absolute;
     width: 100%;
     z-index: 999;
+    position: fixed;
+    top: 0;
+    padding: 0px 30px 0px 30px;
   }
   .nav .left {
     float: left;
-    margin-left: 1em;
+    padding: 10px 120px;
   }
   .nav .left li {
     /* border-bottom: 1px solid #ED5565; */
@@ -40,24 +33,52 @@
   .nav .right {
     float: right;
     margin-right: 1em;
-    margin-top: 50px;
+    margin-top: 80px;
+    padding-right: 44px;
   }
   .nav .right li {
     /* border-bottom: 1px solid #ED5565; */
-    font-size: 14px;
+    font-size: 1rem;
     float: left;
   }
   .nav .right li a {
     display: block;
     padding: 10px 15px;
     line-height: 30px;
+    text-decoration: none;
+    color: #fff;
   }
-  .nav .right li a:hover { color: #ef5438;font-weight: bold; }
-  .toggle-nav { display: none; }
+  .nav .right li a:hover { border-bottom: 2px solid #ef5438;}
+  .toggle-nav { display: none; z-index: 1; }
   .nav-mobile style { display: block;margin-top:22px; }
   .logo{
-    width:95px;
+    width: 120px;
   }
+  .btn-inner{
+    color: #FFF;
+  }
+  .btn:hover .btn-inner{
+    color: #ED5565;
+  }
+  .float-right {
+
+    float: right !important;
+
+}
+
+/* StyleSheet for change menu when scrolling */
+.fixed-menu {
+  background-color: rgba(0, 0, 0, 0.85);
+  min-height: 50px;
+}
+.fixed-menu .right {
+  float: right;
+  margin-right: 1em;
+  margin-top: 15px;
+}
+.fixed-menu .left .logo {
+  width: 70px;
+}
     
   
   
@@ -66,9 +87,18 @@
     .nav { 
       /* border-bottom: 1px solid rgba(0,0,0,0.1); */
       min-height: 50px;
+      padding-right: 0;
+    }
+    .nav>a{
+      color: #FFF;
+      text-decoration: none;
+    }
+    .nav>a:hover{
+      color: #FFF;
+      text-decoration: none;
     }
     .logo{
-      width:60px;
+      width:100px;
     }
     .toggle-nav {
       display: block; 
@@ -76,11 +106,12 @@
       position: absolute;
       right: 10px;
       line-height: 30px;
-      margin-top: 13px;
+      margin-top: 20px;
+      padding-right: 45px;
     }
     .toggle-nav:after { content: ' Menu'; }
     
-    .nav-mobile { display: none;margin-top:22px;z-index: 999; }
+    .nav-mobile { display: none;margin-top: -45px;z-index: 999; }
     .style-mobile {
       background: #DA4453;
       top : 51px;
@@ -100,6 +131,12 @@
       display: block;
       float: none;
       margin: 0em;
+      padding-left: 50px;
     }
-  }
+
+    /* StyleSheet for change menu when scrolling in Mobile Template */
+
+}
+
+
     

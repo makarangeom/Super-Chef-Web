@@ -1,0 +1,141 @@
+.btn-pro {
+    display: inline-block;
+    padding: 13px 20px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    background: #795ae9;
+    border-radius: 3px;
+    font: 12px/1.2 "Oswald", sans-serif;
+    letter-spacing: 0.4em;
+    text-align: center;
+    text-indent: 2px;
+    text-transform: uppercase;
+    transition: color 0.1s linear 0.05s;
+}
+.btn-pro::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: #e1e1e1;
+    text-decoration: none;
+    border-radius: 3px;
+    z-index: 1;
+    opacity: 0;
+    transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0.2s;
+}
+.btn-pro::after {
+    transition: border 0.1s linear 0.05s;
+}
+.btn-pro .btn-product {
+    position: relative;
+    z-index: 2;
+}
+.btn-pro:hover {
+    color: #ef5438;
+    transition: color 0.1s linear 0s;
+    text-decoration: none;
+}
+.btn-pro:hover::before {
+    top: 0;
+    height: 100%;
+    opacity: 1;
+    transition: height 0.2s ease, top 0.2s ease, opacity 0s linear 0s;
+}
+.btn-pro:hover::after {
+    border-color: #373737;
+    transition: border 0.1s linear 0s;
+}
+.product_h1{
+    text-align:center;text-transform: uppercase;color:#ef5438;border-bottom: 2px solid #ef5438;padding-bottom:3px;margin-bottom: 30px;
+}
+
+
+
+/* Style Sheet For Hover On Images */
+.view{
+    margin-bottom: 30px;
+}
+.view .mask,
+.view .content {
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+}
+.view .mask{
+    top:-20px;
+}
+.view img {
+    display: block;
+    position: relative;
+    margin-bottom: 10px;
+}
+.view h2 {
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    font-size: 17px;
+    font-family: Raleway, serif;
+    padding: 10px;
+    /*background: rgba(0, 0, 0, 0.8);*/
+    margin: 90px 0 0 0;
+}
+.view h2 a i {
+    font-size: 60px;color: rgba(247, 240, 240, 0.75);
+}
+.view-first h2 {
+    transform: translateY(-100px);
+    opacity: 0;
+    font-family: Raleway, serif;
+    transition: all 0.2s ease-in-out;
+}
+.view-first:hover .mask {
+    opacity: 1;
+}
+.view-first:hover h2 {
+    opacity: 1;
+    transform: translateY(0px);
+}
+.view .float-left i{
+    font-size:15px;color:yellow;
+}
+
+
+/* Style Sheet For Mobiel Template */
+@media only screen and (max-width: 768px) {
+    .view-first h2 {
+        /* transform: translateY(-100px); */
+        opacity: 0;
+        font-family: Raleway, serif;
+        transition: all 0.2s ease-in-out;
+    }
+    .view .mask{
+        top:25px;
+    }
+    .view h2 a i{
+        font-size: 80px;color: rgba(247, 240, 240, 0.75);
+    }
+}
+
+/* Bounce In For Icon Play Video*/
+/* .hvr-bounce-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+}
+.hvr-bounce-in:hover, .hvr-bounce-in:focus, .hvr-bounce-in:active {
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+    transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+} */

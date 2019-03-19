@@ -5,135 +5,414 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>jQuery nav-mobile.js Demo</title>
+
+    <!--  Main Style Sheet -->
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+    <!-- Style Sheet For Top Menu -->
     <link rel="stylesheet" href="assets/css/menu.css"/>
 
     <!-- Style Sheet for Slideshow Parallax -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="assets/css/slideshow_parallax.css">
 
+    <!-- Style Sheet For Popular Products List -->
+    <link rel="stylesheet" href="assets/css/products.css">
+
+    <!-- Style Sheet for Sponsor Logo -->
+    <link rel="stylesheet" href="assets/css/sponsor.css">
+
+    <!-- Style Sheet For Fontawesome 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Style Sheet For Parallax Background Image 4-->
+    <link rel="stylesheet" href="assets/css/parallax_background.css">
+
+    <!-- Style Sheet For Footer -->
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <!-- Style Sheet For Bootstrap 4-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body>
-    <nav class="nav">
+
+<body class="body">
+    <!-- START MENU AND LOGO -->
+    <nav class="nav" id="nav">
         <a class="toggle-nav" href="#">&#9776;</a>
-        <div class="left col-md-12" style="display: block;
-            padding: 10px 15px;">
-                <img class="logo" src="http://www.logospng.com/images/14/restaurant-logo-png-14000.png" alt="Hot Restaurant">
+        <div class="left col-md-4 col-sm-6" style="display: block;">
+          <img class="logo" src="http://www.logospng.com/images/14/restaurant-logo-png-14000.png" alt="Hot Restaurant">
         </div>
-        <div class="nav-mobile">
-            
-            <ul class="right">
+        <div class="nav-mobile float-md-right col-md-8">
+            <ul class="right float-md-right">
                 <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
-                <li><a href="#"><i class="fa fa-book"></i> Categoriesw</a></li>
-                <li><a href="#"><i class="fa fa-fire"></i> Most Popular</a></li>
+                <li><a href="#"><i class="fa fa-book"></i> About</a></li>
+                <li><a href="#"><i class="fa fa-fire"></i> Contact</a></li>
+                <li><a href="#"><i class="fa fa-fire"></i> Category</a></li>
             </ul>
         </div>
     </nav>
-    <main class="main-content">
-        <section class="slideshow">
-          <div class="slideshow-inner">
-            <div class="slides">
-              <div class="slide is-active ">
-                <div class="slide-content">
-                  <div class="caption">
-                    <div class="title">Slide title 1</div>
-                    <div class="text">
-                      <p>Slide description 1</p>
-                    </div> 
-                    <a href="#" class="btn">
-                      <span class="btn-inner">Learn More</span>
-                    </a>
+    <!-- END MENU AND LOGO -->
+
+    <!-- START SLIDESHOW PARALLAX -->
+      <main class="main-content">
+          <section class="slideshow">
+            <div class="slideshow-inner">
+              <div class="slides">
+                <div class="slide is-active ">
+                  <div class="slide-content">
+                    <div class="caption">
+                      <div class="title">Slide title 1</div>
+                      <div class="text">
+                        <p>Slide description 1</p>
+                      </div> 
+                      <a href="#" class="btn">
+                        <span class="btn-inner">Learn More</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="image-container"> 
+                    <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-1.jpg" alt="" class="image" />
                   </div>
                 </div>
-                <div class="image-container"> 
-                  <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-1.jpg" alt="" class="image" />
-                </div>
-              </div>
-              <div class="slide">
-                <div class="slide-content">
-                  <div class="caption">
-                    <div class="title">Slide title 2</div>
-                    <div class="text">
-                      <p>Slide description 2</p>
-                    </div> 
-                    <a href="#" class="btn">
-                      <span class="btn-inner">Learn More</span>
-                    </a>
+                <div class="slide">
+                  <div class="slide-content">
+                    <div class="caption">
+                      <div class="title">Slide title 2</div>
+                      <div class="text">
+                        <p>Slide description 2</p>
+                      </div> 
+                      <a href="#" class="btn">
+                        <span class="btn-inner">Learn More</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="image-container">
+                    <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-4-1.jpg" alt="" class="image" />
                   </div>
                 </div>
-                <div class="image-container">
-                  <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-4-1.jpg" alt="" class="image" />
-                </div>
-              </div>
-              <div class="slide">
-                <div class="slide-content">
-                  <div class="caption">
-                    <div class="title">Slide title 3</div>
-                    <div class="text">
-                      <p>Slide description 3</p>
-                    </div> 
-                    <a href="#" class="btn">
-                      <span class="btn-inner">Learn More</span>
-                    </a>
+                <div class="slide">
+                  <div class="slide-content">
+                    <div class="caption">
+                      <div class="title">Slide title 3</div>
+                      <div class="text">
+                        <p>Slide description 3</p>
+                      </div> 
+                      <a href="#" class="btn">
+                        <span class="btn-inner">Learn More</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="image-container">
+                    <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2016/11/11.jpg" alt="" class="image" />
                   </div>
                 </div>
-                <div class="image-container">
-                  <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2016/11/11.jpg" alt="" class="image" />
-                </div>
-              </div>
-              <div class="slide">
-                <div class="slide-content">
-                  <div class="caption">
-                    <div class="title">Slide title 4</div>
-                    <div class="text">
-                      <p>Slide description 4</p>
-                    </div> 
-                    <a href="#" class="btn">
-                      <span class="btn-inner">Learn More</span>
-                    </a>
+                <div class="slide">
+                  <div class="slide-content">
+                    <div class="caption">
+                      <div class="title">Slide title 4</div>
+                      <div class="text">
+                        <p>Slide description 4</p>
+                      </div> 
+                      <a href="#" class="btn">
+                        <span class="btn-inner">Learn More</span>
+                      </a>
+                    </div>
+                  </div>
+                  <div class="image-container"> 
+                    <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-4-1.jpg" alt="" class="image" />
                   </div>
                 </div>
-                <div class="image-container"> 
-                  <img src="https://www.alixbdanthenay.fr/wp-content/uploads/2015/07/Indispensable-4-1.jpg" alt="" class="image" />
+              </div>
+              <div class="pagination justify-content-center">
+                <div class="item is-active"> 
+                  <span class="icon">1</span>
+                </div>
+                <div class="item">
+                  <span class="icon">2</span>
+                </div>
+                <div class="item">
+                  <span class="icon">3</span>
+                </div>
+                <div class="item">
+                  <span class="icon">4</span>
                 </div>
               </div>
-            </div>
-            <div class="pagination justify-content-center">
-              <div class="item is-active"> 
-                <span class="icon">1</span>
+              <div class="arrows">
+                <div class="arrow prev">
+                  <span class="svg svg-arrow-left">
+                    <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
+                    <span class="alt sr-only"></span>
+                  </span>
+                </div>
+                <div class="arrow next">
+                  <span class="svg svg-arrow-right">
+                    <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
+                    <span class="alt sr-only"></span>
+                  </span>
+                </div>
               </div>
-              <div class="item">
-                <span class="icon">2</span>
-              </div>
-              <div class="item">
-                <span class="icon">3</span>
-              </div>
-              <div class="item">
-                <span class="icon">4</span>
-              </div>
-            </div>
-            <div class="arrows">
-              <div class="arrow prev">
-                <span class="svg svg-arrow-left">
-                  <svg version="1.1" id="svg4-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M13,26c-0.256,0-0.512-0.098-0.707-0.293l-12-12c-0.391-0.391-0.391-1.023,0-1.414l12-12c0.391-0.391,1.023-0.391,1.414,0s0.391,1.023,0,1.414L2.414,13l11.293,11.293c0.391,0.391,0.391,1.023,0,1.414C13.512,25.902,13.256,26,13,26z"/> </svg>
-                  <span class="alt sr-only"></span>
-                </span>
-              </div>
-              <div class="arrow next">
-                <span class="svg svg-arrow-right">
-                  <svg version="1.1" id="svg5-Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14px" height="26px" viewBox="0 0 14 26" enable-background="new 0 0 14 26" xml:space="preserve"> <path d="M1,0c0.256,0,0.512,0.098,0.707,0.293l12,12c0.391,0.391,0.391,1.023,0,1.414l-12,12c-0.391,0.391-1.023,0.391-1.414,0s-0.391-1.023,0-1.414L11.586,13L0.293,1.707c-0.391-0.391-0.391-1.023,0-1.414C0.488,0.098,0.744,0,1,0z"/> </svg>
-                  <span class="alt sr-only"></span>
-                </span>
-              </div>
-            </div>
-          </div> 
+            </div> 
+          </section>
+        </main>
+      <!-- END SLIDESHOW PARALLAX -->
+
+      <!-- START CONENT OF POPULAR PRODUCT -->
+        <section class="b-seaction">
+          <div class="container">
+                <div class="row col-md-12 justify-content-center">
+                  <h1 class="product_h1" style="width:210px;">Popular</h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 view view-first">
+                        <a href="#"> <img src="https://unsplash.it/500/300?image=0" style="width:100%;" alt="Product Image" /> </a>
+                          <div class="mask">
+                            <h2 class=""><a href=""><i class="fas fa-play-circle hvr-bounce-in"></i></a></h2>
+                          </div>
+                          <div class="float-left"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                          <div class="float-right">100 views</div>
+                          <div class="both"></div>
+                          <div>
+                            <h5 style="font-weight:bold;">Lorem ipsum dolor sit amet</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor soluta eius quia libero earum laudantium non unde provident . . .</p>
+                                
+                            <div class="row col-md-12 justify-content-center">
+                              <a href="#" class="btn-pro">
+                                <span class="btn-product">Read More</span>
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 view view-first">
+                        <a href="#"> <img src="https://unsplash.it/500/300?image=0" style="width:100%;" alt="Product Image" /> </a>
+                          <div class="mask">
+                            <h2><a href=""><i class="fas fa-play-circle hvr-bounce-in"></i></a></h2>
+                          </div>
+                          <div class="float-left"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                          <div class="float-right">100 views</div>
+                          <div class="both"></div>
+                          <div>
+                            <h5 style="font-weight:bold;">Lorem ipsum dolor sit amet</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor soluta eius quia libero earum laudantium non unde provident . . .</p>
+                                
+                            <div class="row col-md-12 justify-content-center">
+                              <a href="#" class="btn-pro">
+                                <span class="btn-product">Read More</span>
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-4 view view-first">
+                        <a href="#"> <img src="https://unsplash.it/500/300?image=0" style="width:100%;" alt="Product Image" /> </a>
+                          <div class="mask">
+                            <h2><a href=""><i class="fas fa-play-circle"></i></a></h2>
+                          </div>
+                          <div class="float-left"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                          <div class="float-right">100 views</div>
+                          <div class="both"></div>
+                          <div>
+                            <h5 style="font-weight:bold;">Lorem ipsum dolor sit amet</h5>
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolor soluta eius quia libero earum laudantium non unde provident . . .</p>
+                                
+                            <div class="row col-md-12 justify-content-center">
+                              <a href="#" class="btn-pro">
+                                <span class="btn-product">Read More</span>
+                              </a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+          </div>
         </section>
-      </main>
+      <!-- END CONENT OF POPULAR PRODUCT -->
+
+      <!-- START PARALLAX VIDEO -->
+        <section class="parallax">
+            <div class="pllax-bk"
+                data-0="transform: translateY(-350px);"
+                data-end="transform: translateY(-100px);"
+            ></div>
+            <div class="container">
+                <div class="row">
+                        <div class="col-md-6" style="color:cornsilk">
+                            <h1>Title</h1>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas fugit dicta, eligendi placeat nesciunt, hic, expedita nemo nostrum voluptatem labore officiis possimus atque aliquid ex deserunt quod. Ea, itaque ipsum.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <iframe src="http://www.youtube.com/embed/VkTEzjqtDNI" height="350" style="width:100%;"></iframe>       
+                        </div>
+                </div>
+            </div>
+        </section>
+      <!-- END PARALLAX VIDEO -->
+
+      <!-- START CONENT OF LATEST PRODUCT -->
+      <section class="b-seaction">
+          <div class="container">
+            <div class="row col-md-12 justify-content-center">
+              <h1 class="product_h1" style="width:300px;">LATEST POSTS</h1>
+            </div>
+            <div class="row customer-logos">
+              <div class="col-md-6 slide">
+                <div class="post-contain">
+                  <div class="post-image" style="background-image:url('https://unsplash.it/500/300?image=0');">
+                    <h2><a class="latest-hover" href=""><i class="fas fa-play-circle"></i></a></h2>
+                    <div class="post-title">
+                      <p><a href="packed-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons/index.html">Packed with tons of features such as Google Fonts, FontAwesome 4 and Typicons</a></p>
+                    </div>
+                  </div>
+                  <div class="post-content-left">
+                    <div class="post-date">
+                      <p class="day">18</p>
+                      <p class="month-year">Sep<br>2014</p>
+                    </div>
+                    <div class="latest-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                    <div class="post-overview">
+                      <p><i class="fas fa-eye"></i> &nbsp;0 Views</li></p>
+                      <p><i class="fas fa-comment"></i> &nbsp;0 Comments</li></p>
+                      <p><i class="fas fa-share"></i> &nbsp;<a href="https://twitter.com/share?url=http%3A%2F%2Fwp.microthemes.ca%2Fvienna%2Fpacked-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons%2F&amp;text=Packed+with+tons+of+features+such+as+Google+Fonts%2C+FontAwesome+4+and+Typicons" target="_blank">Share</a></p>
+                      <p><i class="fas fa-pen break"></i> &nbsp;<a href="packed-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons/index.html#respond">Post a comment</a></p>
+                    </div>
+                  </div>
+                  <div class="post-content-right">
+                    <p class="pm-news-post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non est justo. Etiam posuere et enim a rutrum. Pellentesque scelerisque malesuada metus dictum blandit. Aenean sed cursus felis. Quisque laoreet dolor vitae ante dignissim varius <a href="packed-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons/index.html">{...}</a></p>
+                    <p class="pm-news-post-continue"><a href="packed-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons/index.html">Continue Reading →</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 slide">
+                  <div class="post-contain">
+                    <div class="post-image" style="background-image:url('https://unsplash.it/500/300?image=0');">
+                      <h2><a class="latest-hover" href=""><i class="fas fa-play-circle"></i></a></h2>
+                      <div class="post-title">
+                        <p><a href="packed-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons/index.html">Packed with tons of features such as Google Fonts, FontAwesome 4 and Typicons</a></p>
+                      </div>
+                    </div>
+                    <div class="post-content-left">
+                      <div class="" style="float: left; margin-bottom: -30px; font-weight: bold; font-style: normal; font-family: 'Cantata One';">
+                        <p class="" style="float: left; font-size: 46px; margin-top: -11px; font-weight: bold; margin-right: 7px;">18</p>
+                        <p class="" style="float: left; font-weight: bold; line-height: 22px;">Sep<br>2014</p>
+                      </div>
+                      <div class="latest-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                      <div class="post-overview">
+                        <p><i class="fas fa-eye"></i> &nbsp;0 Views</li></p>
+                        <p><i class="fas fa-comment"></i> &nbsp;0 Comments</li></p>
+                        <p><i class="fas fa-share"></i> &nbsp;<a href="https://twitter.com/share?url=http%3A%2F%2Fwp.microthemes.ca%2Fvienna%2Fpacked-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons%2F&amp;text=Packed+with+tons+of+features+such+as+Google+Fonts%2C+FontAwesome+4+and+Typicons" target="_blank">Share</a></p>
+                        <p><i class="fas fa-pen break"></i> &nbsp;<a href="packed-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons/index.html#respond">Post a comment</a></p>
+                      </div>
+                    </div>
+                    <div class="post-content-right">
+                      <p class="pm-news-post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non est justo. Etiam posuere et enim a rutrum. Pellentesque scelerisque malesuada metus dictum blandit. Aenean sed cursus felis. Quisque laoreet dolor vitae ante dignissim varius <a href="packed-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons/index.html">{...}</a></p>
+                      <p class="pm-news-post-continue"><a href="packed-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons/index.html">Continue Reading →</a></p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- <div class="col-md-6 slide">
+                    <div class="post-contain">
+                      <div class="post-image" style="background-image:url('https://unsplash.it/500/300?image=0');">
+                        <h2><a class="latest-hover" href=""><i class="fas fa-play-circle"></i></a></h2>
+                        <div class="post-title">
+                          <p><a href="packed-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons/index.html">Packed with tons of features such as Google Fonts, FontAwesome 4 and Typicons</a></p>
+                        </div>
+                      </div>
+                      <div class="post-content-left">
+                        <div class="post-date">
+                          <p class="day">18</p>
+                          <p class="month-year">Sep<br>2014</p>
+                        </div>
+                        <div class="latest-star"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                        <div class="post-overview">
+                          <p><i class="fas fa-eye"></i> &nbsp;0 Views</li></p>
+                          <p><i class="fas fa-comment"></i> &nbsp;0 Comments</li></p>
+                          <p><i class="fas fa-share"></i> &nbsp;<a href="https://twitter.com/share?url=http%3A%2F%2Fwp.microthemes.ca%2Fvienna%2Fpacked-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons%2F&amp;text=Packed+with+tons+of+features+such+as+Google+Fonts%2C+FontAwesome+4+and+Typicons" target="_blank">Share</a></p>
+                          <p><i class="fas fa-pen break"></i> &nbsp;<a href="packed-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons/index.html#respond">Post a comment</a></p>
+                        </div>
+                      </div>
+                      <div class="post-content-right">
+                        <p class="pm-news-post-excerpt">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus non est justo. Etiam posuere et enim a rutrum. Pellentesque scelerisque malesuada metus dictum blandit. Aenean sed cursus felis. Quisque laoreet dolor vitae ante dignissim varius <a href="packed-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons/index.html">{...}</a></p>
+                        <p class="pm-news-post-continue"><a href="packed-with-tons-of-features-such-as-google-fonts-fontawesome-4-and-typicons/index.html">Continue Reading →</a></p>
+                      </div>
+                    </div>
+                </div> -->
+            </div> 
+          </div>
+        </section>
+      <!-- END CONENT OF LATEST PRODUCT -->
+
+      <!-- START FOOTER -->
+        <section class="footer-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                          <div class="row">
+                              <div class="col-md-6 desc" style="color:cornsilk">
+                                  <h2 class="footer-cat">Contact Info</h2>
+                                  <p>Address: <a href="https://www.google.com/maps/place/Passerelles+num%C3%A9riques+Cambodia+(PNC)/@11.5508598,104.8830836,15z/data=!4m5!3m4!1s0x0:0x171e0b69c7c6f7ba!8m2!3d11.5508598!4d104.8830836">BP 511, Phum Tropeang Chhuk (Borey Sorla) Sangtak, Street 371, Phnom Penh.</a></p>
+                                  <p>Phone: <a href="tel:069">(+855) 69 --- ---</a></p>
+                                  <p>E-mail: <a href="mailto:coconut@gmail.com">coconut@gmail.com</a></p>
+                                </div>
+                                <div class="col-md-6 cat">
+                                  <h2 class="footer-cat">Categories</h2>
+                                  <p>News</p>
+                                  <p>Technology</p>
+                                  <p>Spoart</p>
+                                  <p>Social</p>
+                                  <p>Dessert</p>
+                                </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12 power-by" >
+                              <h5>Power By <a href="http://coconut.com">Coconut</a></h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-6 app">
+                      <img class="main" src="http://pluspng.com/img-png/fruits-png-hd-fruit-png-file-png-image-1098.png" alt="">
+                      <a href=""><img class="hvr-pulse-grow" src="https://gallery.mailchimp.com/3ca10c5b4916d89b38d70660f/images/bb5bc7d4-4204-4f1b-8fdf-fb1abae8ab01.png" alt=""></a>
+                      <a href=""><img class="hvr-pulse-grow" src="https://gallery.mailchimp.com/3ca10c5b4916d89b38d70660f/images/50393594-4cac-48b8-9200-6f87f620f4c6.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 divide-footer"></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center center-block">
+                    <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-footer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-footer"><i class="fab fa-youtube"></i></a>
+                    <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-footer"><i class="fab fa-google"></i></a>
+                    <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-footer"><i class="fab fa-twitter"></i></a>
+                    <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-footer"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+                 
+                <!-- For Replace In Mobile -->
+                <div class="row">
+                    <div class="col-md-12 mobile-power-by" >
+                      <h5>Power By <a href="http://coconut.com">Coconut</a></h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <!-- END FOOTER -->
+
+      <!-- START BUTTON SCROLL TO TOP -->
+        <div class="auto-scroll-to-top hvr-icon-pulse-grow">
+          <i class="fa fa-angle-up hvr-icon"></i>
+        </div>
+      <!-- END BUTTON SCROLL TO TOP -->
+
+    <!-- Main Script -->
+    <script src="assets/js/main.js"></script>
+    <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
     <!-- Script For Bootstrap 4 -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
@@ -143,11 +422,25 @@
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="assets/js/menu.js"></script>
 
+    <!-- Script For Popular Products List  -->
+    <script src="assets/css/products_list.js"></script>
+
     <!-- Script For Slideshow Parallax  -->
     <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
     <script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
     <script src="assets/js/slideshow_parallax.js"></script>
+
+    <!-- Script Logo Sponsor By -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="assets/js/sponsor.js"></script>
+
+    <!-- Script For Parallax Background  -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.29/skrollr.min.js'></script>
+    <script id="rendered-js" >
+      var s = skrollr.init();
+      //# sourceURL=pen.js
+    </script>
 </body>
 </html>
