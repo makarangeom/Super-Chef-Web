@@ -1,0 +1,382 @@
+/* StyleSheet For Tab Header */
+.tablink {
+    background-color: #555;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    font-size: 17px;
+    width: 100%;
+    text-transform: uppercase;
+}
+.tablink:hover {
+    background-color: #777;
+}
+
+.tab-desc {
+    /* padding-right: 0; */
+}
+.tab-rate {
+    padding-right: 0;
+    padding-left: 0;
+}
+.tab-comment {
+    /* padding-left: 0; */
+}
+
+
+
+/* StyleSheet For Descripiton Block */
+.pm-sub-header-title {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    margin: 0 auto;
+    display: table;
+    padding: 20px 100px;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+.list-gradient{
+    font-size: 8px;
+    color: #212529;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.desc {
+    margin-top: 25px;
+}
+.desc div {
+    padding: 0px 30px 0px 30px;
+}
+.desc h4{
+    color: #ef5438;
+    font-weight: 200;
+}
+.desc div p {
+    color:#212529;
+}
+
+
+
+/* StyleSheet For Rating Star Block */
+.main-rate {
+    margin: 50px 0px 50px 0px;
+}
+.total-rate {
+    text-align: center;
+    font-style: normal;
+    font-family: 'Cantata One';
+}
+.total-rate > span {
+    font-size: 50px;
+    font-weight: bold;
+}
+.total-rate > div > span > i {
+    color: #fbb904;
+    font-size: 18px;
+}
+
+
+
+.inner {
+    padding: 1em;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+    -webkit-border-radius: 4px; 
+    -moz-border-radius: 4px; 
+    border-radius: 4px; 
+  }
+  
+  .rating {
+    float: left;
+    width: 45%;
+    margin-right: 5%;
+    text-align: center;
+  }
+  
+  .rating-num {
+    color: #333333;
+    font-size: 72px;
+    font-weight: 100;
+    line-height: 1em; 
+  }
+  
+  .rating-stars {
+    font-size: 15px;
+    color: #E3E3E3;
+    margin-bottom: .5em;
+  }
+  .rating-stars .active {
+    color: #737373;
+  }
+  
+  .rating-users {
+    font-size: 14px;
+  }
+  
+  .histo {
+    float: left;
+    width: 50%;
+    font-size: 13px;
+  }
+  
+  .histo-star {
+    float: left;
+  }
+.histo-star i {
+    color: #fbb904;
+}
+.histo-rate {
+    width: 100%;
+    display: block;
+    clear: both;
+    padding-bottom: 28px;
+}
+  
+  .bar-block {
+    margin-left: 5px;
+    color: black;
+    display: block;
+    float: left;
+    width: 75%;
+    position: relative;
+    border-radius: 50px;
+    background-color: #e7edf4;
+  }
+  
+  .bar {
+    /* padding: 4px; */
+    display: block;
+    /* border: 1px solid black; */
+    border-radius: 50px;
+    padding: 0px 5px 0px 5px;
+  }
+  
+  #bar-five {
+    width: 0;
+    background-color: #9FC05A;
+  }
+  
+  #bar-four {
+    width: 0;
+    background-color: #ADD633;
+  }
+  
+  #bar-three {
+    width: 0;
+    background-color: #FFD834;
+  }
+  
+  #bar-two {
+    width: 0;
+    background-color: #FFB234;
+  }
+  
+  #bar-one {
+    width: 0;
+    background-color: #FF8B5A;
+  }
+
+
+/* StyleSheet For Rating Star */
+.success-box {
+    margin:50px 0;
+    padding:10px 10px;
+    border:1px solid #eee;
+    background:#f9f9f9;
+}
+.success-box img {
+    margin-right:10px;
+    display:inline-block;
+    vertical-align:top;
+}
+.success-box > div {
+    vertical-align:top;
+    display:inline-block;
+    color:#888;
+}
+
+
+
+/* Rating Star Widgets Style */
+.rating-stars ul {
+    list-style-type:none;
+    padding:0;
+
+    -moz-user-select:none;
+    -webkit-user-select:none;
+}
+.rating-stars ul > li.star {
+    display:inline-block;
+}
+/* Idle State of the stars */
+.rating-stars ul > li.star > i.fa {
+    font-size:2.5em; /* Change the size of the stars */
+    color:#ccc; /* Color on idle state */
+}
+/* Hover state of the stars */
+.rating-stars ul > li.star.hover > i.fa {
+    color:#FFCC36;
+}
+/* Selected state of the stars */
+.rating-stars ul > li.star.selected > i.fa {
+    color:#FF912C;
+}
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    background-color: #d19a03;
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    padding: 15px 0px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    background-color: #fbb904;
+    color: #fff;
+    text-decoration: none;
+  }
+  .rate-thumnail {
+      border: 1px solid #ccc;
+      width: 70px;
+      border-radius: 100px;
+  }
+.rate-info p{
+    line-height: 3px;
+    padding: 8px;
+    margin: 11px;
+}
+.rate-info .user-name {
+    font-weight: bold;
+}
+.user-rate-star i {
+    color: #fbb904;
+}
+.user-rate-star span {
+    background-color: #ef5438; 
+    color: #fff; 
+    font-size: 13px; 
+    margin: 0; 
+    padding: 0px 10px;
+    width: 106px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.rate-edit a {
+    color: #ccc;
+}
+
+
+
+/* StyleSheet For Comments Block */
+.comment-thumnail {
+    border: 1px solid #ccc;
+    width: 70px;
+    border-radius: 100px;
+}
+.comment-info p{
+    line-height: 3px;
+    padding: 8px;
+    margin: 11px;
+}
+.comment-info .user-name {
+    font-weight: bold;
+}
+.user-comment-star i {
+    color: #fbb904;
+}
+.user-comment-star span {
+    background-color: #ef5438; 
+    color: #fff; 
+    font-size: 13px; 
+    margin: 0; 
+    padding: 0px 10px;
+    width: 106px;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+.comment-edit a {
+    color: #ccc;
+}
+.f-cmt-icon {
+    color: #ccc;
+    padding-right: 5px;
+    font-size: 19px;
+}
+.f-cmt-icon:hover {
+    color: #555;
+}
+.s-cmt-icon {
+    color: #ccc;
+    padding-right: 5px;
+    font-size: 19px;
+}
+.s-cmt-icon:hover {
+    color: #555;
+}
+.comment-info span {
+    color: #ccc;
+    font-weight: normal;
+    margin-left: 5px;
+}
+.comment-info div span {
+    margin-right: 30px;
+    font-size: 14px;
+}
+.comment-edit .cmt-btn {
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-weight: normal;
+    width: 100px;
+    background: #ccc;
+    color: #fff;
+    margin-top: -11px;
+    font-size: 14px;
+}
+.main-cmt-btn {
+    margin-top: 35px; 
+    padding-top: 30px;
+}
+
+
+
+/* Style Sheet For Mobiel Template */
+@media only screen and (max-width: 1005px) {
+    .dis-btn {
+        display: none;
+        float: right;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .histo-rate {
+        padding-bottom: 10px;
+        justify-content: center;
+        display: flex;
+    }
+    .hvr-grow {
+        width: 75%;
+    }
+    .main-cmt-btn {
+        margin-top: -10px;
+    }
+}

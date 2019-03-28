@@ -51,7 +51,8 @@
     transition: border 0.1s linear 0s;
 }
 .product_h1{
-    text-align:center;text-transform: uppercase;color:#ef5438;border-bottom: 2px solid #ef5438;padding-bottom:3px;margin-bottom: 30px;
+    text-align:center;text-transform: uppercase;color:#ef5438;border-bottom: 2px solid #ef5438;padding-bottom:3px;margin-bottom: 50px;
+    
 }
 
 

@@ -6,19 +6,20 @@
     /* z-index: -1; */
     /* position: absolute; */
     padding-top: 50px;
+    margin-top: 50px;
 }
-.desc img{
+.desc-footer img{
     text-align: center;
     width: 110px;
 }
-.desc p{
+.desc-footer p{
     color: #d19a03;
     margin-bottom: 0rem;
 }
-.desc a{
+.desc-footer a{
     color: #fff;
 }
-.desc a:hover{
+.desc-footer a:hover{
     color: #fff;
 }
 .power-by{
@@ -178,7 +179,7 @@ a.btn-social,
         /* position: absolute; */
         padding-top: 50px;
     }
-    .desc{
+    .desc-footer{
         margin-bottom: 30px;
     }
     .power-by{

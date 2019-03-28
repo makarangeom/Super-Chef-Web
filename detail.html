@@ -1,0 +1,489 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery nav-mobile.js Demo</title>
+
+    <!--  Main Style Sheet -->
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css"/>
+
+    <!-- Style Sheet For Top Menu -->
+    <link rel="stylesheet" href="assets/css/menu.css"/>
+
+    <!-- Style Sheet for Slideshow Parallax -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/slideshow_parallax.css">
+
+    <!-- Style Sheet For Popular Products List -->
+    <link rel="stylesheet" href="assets/css/products.css">
+
+    <!-- Style Sheet for Sponsor Logo -->
+    <link rel="stylesheet" href="assets/css/sponsor.css">
+
+    <!-- Style Sheet For Fontawesome 5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+    <!-- Style Sheet For Parallax Background Image 4-->
+    <link rel="stylesheet" href="assets/css/parallax_background.css">
+
+    <!-- Style Sheet For Footer -->
+    <link rel="stylesheet" href="assets/css/footer.css">
+
+    <!-- Style Sheet For Bootstrap 4-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="assets/css/detail.css">
+</head>
+
+<body class="body">
+    <!-- START MENU AND LOGO -->
+        <nav class="nav" id="nav">
+            <a class="toggle-nav" href="#">&#9776;</a>
+            <div class="left col-md-4 col-sm-6" style="display: block;">
+              <img class="logo" src="http://www.logospng.com/images/14/restaurant-logo-png-14000.png" alt="Hot Restaurant">
+            </div>
+            <div class="nav-mobile float-md-right col-md-8">
+                <ul class="right float-md-right" id="menu">
+                    <li class="a-menu active"><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li class="a-menu"><a href="#"><i class="fas fa-user-tie"></i> About</a></li>
+                    <li class="a-menu"><a href="#"><i class="fa fa-book"></i> Contact</a></li>
+                    <li class="a-menu"><a href="#"><i class="fas fa-th"></i> Category</a>
+                      <ul>
+                        <li><a href="#">Soup</a></li>
+                        <li><a href="#">Fry</a></li>
+                        <li><a href="#">Roast</a></li>
+                        <li><a href="#">Dessert</a></li>
+                        <li><a href="#">Other</a></li>
+                      </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    <!-- END MENU AND LOGO -->
+
+    <!-- START VIDEO OF FOOD -->
+        <section>
+          <iframe width="100%" height="665" src="https://www.youtube.com/embed/XapGin7ENZk?rel=0&autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    <!-- END VIDEO OF FOOD -->
+
+    <!-- START TAB HEADER -->
+        <section>
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4 col-sm-4 tab-rate tab-desc">
+                    <button class="tablink" onclick="openCity('Desc', this, '#ef5438')">DESCRIPTION</button>
+                  </div>
+                  <div class="col-md-4 col-sm-4 tab-rate tab-rate">
+                    <button class="tablink" onclick="openCity('Rate', this, '#ef5438')">Rating Star</button>
+                  </div>
+                  <div class="col-md-4 col-sm-4 tab-rate tab-comment">
+                    <button class="tablink" onclick="openCity('Comment', this, '#ef5438')" id="defaultOpen">Comments</button>
+                  </div>
+              </div>
+          </div>
+        </section>
+    <!-- END TAB HEADER -->    
+    
+    <!-- START CONTENT FOOD DESCRIPTION -->
+        <section class="b-seaction tabcontent"  id="Desc">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 desc">
+                  <h4>Our Gradient</h4>
+                  <div>
+                    <p>Beef (baked meat), Salad, tomato, onion, vegetable oil, fish sauce, oil, salt, Powder, sugar, garlic, ground pepper.</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-md-12 desc">
+                  <h4>How to coook?</h4>
+                  <div>
+                    <p><i class="fas fa-circle list-gradient"></i>Beef (baked goods) 3 bites (thin hans)</p>
+                    <p><i class="fas fa-circle list-gradient"></i>Salad 1 bite</p>
+                    <p><i class="fas fa-circle list-gradient"></i>1 tomato (thinly sliced)</p>
+                    <p><i class="fas fa-circle list-gradient"></i>1 onion (thin bean)</p>
+                    <p><i class="fas fa-circle list-gradient"></i>1 tablespoon of vegetable oil</p>
+                    <p><i class="fas fa-circle list-gradient"></i>1 tablespoons fish sauce</p>
+                    <p><i class="fas fa-circle list-gradient"></i>1 teaspoon oil</p>
+                    <p><i class="fas fa-circle list-gradient"></i>A little salt</p>
+                    <p><i class="fas fa-circle list-gradient"></i>Powder a little bit</p>
+                    <p><i class="fas fa-circle list-gradient"></i>1 tablespoon of sugar</p>
+                    <p><i class="fas fa-circle list-gradient"></i>4 cloves garlic (shredded)</p>
+                    <p><i class="fas fa-circle list-gradient"></i>Half a teaspoon ground pepper</p>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-md-12 desc">
+                  <h4>Start Cooking</h4>
+                    <div>
+                      <p>1/. Place the salad in a bowl of tomato sauce on the salad and place the onion over the next floor (if you do not like the vegetable oil flavor).</p>
+                      <p>2/. Add hot peppers to fry the frying pan and put the meat back in a few turns.</p>
+                      <p>3/. Room to put sugar, oil, salt, flour, rice, cooked meat, pepper meat, and pepper on top of vegetables.</p>
+                    </div>
+                  
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-md-12 desc">
+                  <h4>NOTED</h4>
+                  <div>
+                    <p>Eat with the pepper sauce more deliciously.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+    <!-- END CONTENT FOOD DESCRIPTION -->
+
+    <!-- START CONTENT PROGRESS RATING RATE STAR -->
+        <section class="b-seaction tabcontent"  id="Rate">
+            <div class="container">
+              <div class="row main-rate">
+                  <div class="col-md-6 col-sm-12 total-rate">
+                    <span>5.4</span>
+                    <div>
+                      <span><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+                    </div>
+                    <p style="font-size: 22px;"><i class="fas fa-user"></i> <span>1,014,004 </span>total</p>
+                  </div>
+
+                  <div class="col-md-6 col-sm-12 histo">
+                      <div class="five histo-rate">
+                          <span class="histo-star">
+                            <i class="fas fa-star"></i> 5           
+                          </span>
+                          <span class="bar-block">
+                            <span id="bar-five" class="bar">
+                              <span>566,784</span>&nbsp;
+                            </span> 
+                          </span>
+                      </div>
+
+                      <div class="four histo-rate">
+                        <span class="histo-star">
+                            <i class="fas fa-star"></i> 4           
+                        </span>
+                        <span class="bar-block">
+                          <span id="bar-four" class="bar">
+                            <span>171,298</span>&nbsp;
+                          </span> 
+                        </span>
+                      </div> 
+                      
+                      <div class="three histo-rate">
+                        <span class="histo-star">
+                          <i class="fas fa-star"></i> 3           
+                        </span>
+                        <span class="bar-block">
+                          <span id="bar-three" class="bar">
+                            <span>94,940</span>&nbsp;
+                          </span> 
+                        </span>
+                      </div>
+                      
+                      <div class="two histo-rate">
+                        <span class="histo-star">
+                          <i class="fas fa-star"></i> 2           
+                        </span>
+                        <span class="bar-block">
+                          <span id="bar-two" class="bar">
+                            <span>44,525</span>&nbsp;
+                          </span> 
+                        </span>
+                      </div>
+                      
+                      <div class="one histo-rate">
+                        <span class="histo-star">
+                          <i class="fas fa-star"></i> 1           
+                        </span>
+                        <span class="bar-block">
+                          <span id="bar-one" class="bar">
+                            <span>136,457</span>&nbsp;
+                          </span> 
+                        </span>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- Start content rating star with button -->
+              <div class='rating-widget'>
+                  <!-- Rating Stars Box -->
+                  <div class='rating-stars text-center'>
+                    <ul id='stars'>
+                      <li class='star' title='Poor' data-value='1'>
+                        <i class='fa fa-star fa-fw'></i>
+                      </li>
+                      <li class='star' title='Fair' data-value='2'>
+                        <i class='fa fa-star fa-fw'></i>
+                      </li>
+                      <li class='star' title='Good' data-value='3'>
+                        <i class='fa fa-star fa-fw'></i>
+                      </li>
+                      <li class='star' title='Excellent' data-value='4'>
+                        <i class='fa fa-star fa-fw'></i>
+                      </li>
+                      <li class='star' title='WOW!!!' data-value='5'>
+                        <i class='fa fa-star fa-fw'></i>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <a href="#" class="hvr-grow" style="width: 50%;">Rating Now</a>
+
+                  <!-- <div class='success-box'>
+                    <div class='clearfix'></div>
+                    <img alt='tick image' width='32' src='data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA0MjYuNjY3IDQyNi42NjciIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDQyNi42NjcgNDI2LjY2NzsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxwYXRoIHN0eWxlPSJmaWxsOiM2QUMyNTk7IiBkPSJNMjEzLjMzMywwQzk1LjUxOCwwLDAsOTUuNTE0LDAsMjEzLjMzM3M5NS41MTgsMjEzLjMzMywyMTMuMzMzLDIxMy4zMzMgIGMxMTcuODI4LDAsMjEzLjMzMy05NS41MTQsMjEzLjMzMy0yMTMuMzMzUzMzMS4xNTcsMCwyMTMuMzMzLDB6IE0xNzQuMTk5LDMyMi45MThsLTkzLjkzNS05My45MzFsMzEuMzA5LTMxLjMwOWw2Mi42MjYsNjIuNjIyICBsMTQwLjg5NC0xNDAuODk4bDMxLjMwOSwzMS4zMDlMMTc0LjE5OSwzMjIuOTE4eiIvPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8Zz4KPC9nPgo8L3N2Zz4K'/>
+                    <div class='text-message'></div>
+                    <div class='clearfix'></div>
+                  </div> -->
+              </div>
+
+              <!-- start list user rating star -->
+              <div class="row">
+                <div class="col-md-8 col-sm-8" style="display: flex; margin-top: 35px;"> 
+                  <div>
+                    <img alt='rate-thumnail' class="rate-thumnail" width='100%' src='https://media.pocketgamer.biz/2018/2/86517/rules-of-survival-big-icon-r225x.jpg'/>
+                  </div>
+                  <div class="rate-info">
+                    <p class="user-name">User name</p>
+                    <p>30,Match,2018</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4" style="margin-top: 35px; padding-top: 30px;"> 
+                    <div class="float-left user-rate-star">
+                        <span>5.0</span>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <div class="float-right rate-edit">
+                        <a href="	"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="col-md-8 col-sm-8" style="display: flex; margin-top: 35px;"> 
+                  <div>
+                    <img alt='rate-thumnail' class="rate-thumnail" width='100%' src='https://www.windowscentral.com/sites/wpcentral.com/files/topic_images/2018/pubg-wc-topic-icon.png'/>
+                  </div>
+                  <div class="rate-info">
+                    <p class="user-name">User name</p>
+                    <p>30,Match,2018</p>
+                  </div>
+                </div>
+
+                <div class="col-md-4 col-sm-4" style="margin-top: 35px; padding-top: 30px;"> 
+                    <div class="float-left user-rate-star">
+                        <span>5.0</span>
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <div class="float-right rate-edit">
+                        <a href="	"><i class="fas fa-ellipsis-v"></i></a>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+          </section>
+    <!-- END CONTENT PROGRESS RATING RATE STAR -->
+
+    <!-- START CONTENT FOOD COMMENTS -->
+        <section class="b-seaction tabcontent"  id="Comment">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 col-sm-12" style="display: flex; margin-top: 35px;"> 
+                      <div>
+                        <img alt='comment-thumnail' class="comment-thumnail" width='100%' src='https://media.pocketgamer.biz/2018/2/86517/rules-of-survival-big-icon-r225x.jpg'/>
+                      </div>
+                      <div class="" style="border-bottom: 2px solid #ccc; width :100%; margin-bottom: 23px; margin-left: 20px;">
+                          <input type="text" placeholder="Type comment here . . ." name="fname" style="width: 100%; margin-top: 15px;">
+                      </div>
+                    </div>
+    
+                    <div class="col-md-3 col-sm-12 main-cmt-btn"> 
+                        <div class="float-left comment-edit dis-btn">
+                            <a class="hvr-grow cmt-btn" href="	"><i class="fas fa-eraser"></i>Cancel</a>
+                        </div>
+                        <div class="float-right comment-edit">
+                            <a class="hvr-grow cmt-btn" href="	"><i class="fas fa-send"></i>Comment</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-sm-8" style="display: flex; margin-top: 35px;"> 
+                      <div>
+                        <img alt='comment-thumnail' class="comment-thumnail" width='100%' src='https://i.ytimg.com/vi/vZb5teJNeV4/hqdefault.jpg'/>
+                      </div>
+                      <div class="comment-info">
+                        <p class="user-name">User name <span>a minute ago</span></p>
+                        <p>Comment Here . . .</p>
+                        <div style="color: #ccc">
+                            <span><a href="	"><i class="f-cmt-icon fas fa-thumbs-up"></i></a>10</span> 
+                            <span><a href=""><i class="s-cmt-icon fas fa-thumbs-down"></i></a>3</span> 
+                            <span><a href=""><i class="s-cmt-icon fas fa-comment-alt"></i></a>20</span> 
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="col-md-4 col-sm-4" style="margin-top: 35px; padding-top: 30px;"> 
+                        <div class="float-right comment-edit">
+                            <a href="	"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-8 col-sm-8" style="display: flex; margin-top: 35px;"> 
+                      <div>
+                        <img alt='comment-thumnail' class="comment-thumnail" width='100%' src='https://i.ytimg.com/vi/-Almzx1-CSk/hqdefault.jpg'/>
+                      </div>
+                      <div class="comment-info">
+                        <p class="user-name">User name <span>a minute ago</span></p>
+                        <p>Comment Here . . .</p>
+                        <div style="color: #ccc">
+                            <span><a href="	"><i class="f-cmt-icon fas fa-thumbs-up"></i></a>10</span> 
+                            <span><a href=""><i class="s-cmt-icon fas fa-thumbs-down"></i></a>3</span> 
+                            <span><a href=""><i class="s-cmt-icon fas fa-comment-alt"></i></a>20</span> 
+                        </div>
+                      </div>
+                    </div>
+    
+                    <div class="col-md-4 col-sm-4" style="margin-top: 35px; padding-top: 30px;"> 
+                        <div class="float-right comment-edit">
+                            <a href="	"><i class="fas fa-ellipsis-v"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          </section>
+    <!-- END CONTENT FOOD COMMENTS -->
+
+      <!-- START FOOTER -->
+        <section class="footer-background">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                          <div class="row">
+                              <div class="col-md-6 desc-footer" style="color:cornsilk">
+                                  <h2 class="footer-cat">Contact Info</h2>
+                                  <p>Address: <a href="https://www.google.com/maps/place/Passerelles+num%C3%A9riques+Cambodia+(PNC)/@11.5508598,104.8830836,15z/data=!4m5!3m4!1s0x0:0x171e0b69c7c6f7ba!8m2!3d11.5508598!4d104.8830836">BP 511, Phum Tropeang Chhuk (Borey Sorla) Sangtak, Street 371, Phnom Penh.</a></p>
+                                  <p>Phone: <a href="tel:069">(+855) 69 --- ---</a></p>
+                                  <p>E-mail: <a href="mailto:coconut@gmail.com">coconut@gmail.com</a></p>
+                                </div>
+                                <div class="col-md-6 cat">
+                                  <h2 class="footer-cat">Categories</h2>
+                                  <p>Soups</p>
+                                  <p>Fry & Fries</p>
+                                  <p>Roasts & Grills</p>
+                                  <p>Desserts</p>
+                                  <p>Other</p>
+                                </div>
+                          </div>
+                          <div class="row">
+                            <div class="col-md-12 power-by" >
+                              <h5>Power By <a href="http://coconut.com">Coconut</a></h5>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-6 app">
+                      <img class="main" src="http://pluspng.com/img-png/fruits-png-hd-fruit-png-file-png-image-1098.png" alt="">
+                      <a href=""><img class="hvr-pulse-grow" src="https://gallery.mailchimp.com/3ca10c5b4916d89b38d70660f/images/bb5bc7d4-4204-4f1b-8fdf-fb1abae8ab01.png" alt=""></a>
+                      <a href=""><img class="hvr-pulse-grow" src="https://gallery.mailchimp.com/3ca10c5b4916d89b38d70660f/images/50393594-4cac-48b8-9200-6f87f620f4c6.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 divide-footer"></div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12 text-center center-block">
+                    <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-footer"><i class="fab fa-facebook-f"></i></a>
+                    <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-footer"><i class="fab fa-youtube"></i></a>
+                    <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-footer"><i class="fab fa-google"></i></a>
+                    <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-footer"><i class="fab fa-twitter"></i></a>
+                    <a href="http://scripteden.com/download/eden-ui/" target="_blank" class="btn-social btn-footer"><i class="fab fa-instagram"></i></a>
+                  </div>
+                </div>
+                 
+                <!-- For Replace In Mobile -->
+                <div class="row">
+                    <div class="col-md-12 mobile-power-by" >
+                      <h5>Power By <a href="http://coconut.com">Coconut</a></h5>
+                    </div>
+                </div>
+            </div>
+        </section>
+      <!-- END FOOTER -->
+
+      <!-- START BUTTON SCROLL TO TOP -->
+        <div class="auto-scroll-to-top hvr-icon-pulse-grow">
+          <i class="fa fa-angle-up hvr-icon"></i>
+        </div>
+      <!-- END BUTTON SCROLL TO TOP -->
+
+    <!-- Main Script -->
+    <script src="assets/js/main.js"></script>
+    <script src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+
+
+    <!-- Script For Menu -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"></script>
+    <script src="assets/js/menu.js"></script>
+
+    <!-- Script For Popular Products List  -->
+    <script src="assets/css/products_list.js"></script>
+
+    <!-- Script For Slideshow Parallax  -->
+    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.1/TweenMax.min.js'></script>
+    <script src="https://static.codepen.io/assets/editor/live/css_reload-5619dc0905a68b2e6298901de54f73cefe4e079f65a75406858d92924b4938bf.js"></script>
+    <script src="assets/js/slideshow_parallax.js"></script>
+
+    <!-- Script Logo Sponsor By -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="assets/js/sponsor.js"></script>
+
+    <!-- Script For Parallax Background  -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.29/skrollr.min.js'></script>
+    <script id="rendered-js" >
+      var s = skrollr.init();
+      //# sourceURL=pen.js
+    </script>
+    <script>
+        // Add active class to the current button (highlight it)
+        var header = document.getElementById("menu");
+        var btns = header.getElementsByClassName("a-menu");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function() {
+          var current = document.getElementsByClassName("active");
+          current[0].className = current[0].className.replace(" active", "");
+          this.className += " active";
+          });
+        }
+    </script>
+
+
+
+
+    <script src="assets/js/detail.js"></script>
+
+</body>
+</html>

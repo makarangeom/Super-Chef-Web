@@ -1,6 +1,6 @@
 .body{
-    color:#212529;
-    font-family: 'Open Sans', sans-serif;
+    color:#ff4181;
+    font-family: 'Open Sans', sans-serif, "PT Sans";
     font-size: 16px;
     height: 0px!important;
 }
@@ -26,7 +26,7 @@ ul { list-style: none; }
     bottom: 40px;
     right: -80px;
     border-radius: 100%;
-    background-color: #d19a03;
+    background-color: #ef5438;
     color: #fff;
     font-size: 44px;
     font-weight: bold;
@@ -213,6 +213,134 @@ ul { list-style: none; }
     transform: translateY(0px);
 }
 
+
+
+.main-cat{
+    background: url("https://www.azamaraclubcruises.com/sites/default/files/heros/med-food-hero.jpg") no-repeat;
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+}
+
+
+
+/* Main StyleSheet For Form Contact Us */
+/* Radial In Send Button */
+.hvr-radial-in {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    overflow: hidden;
+    background: #2098D1;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    width: 100%;
+    border-radius: 5px;
+    text-align: center;
+    padding: 14px 0px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.hvr-radial-in:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #ef5438;
+    border-radius: 100%;
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    text-decoration: none;
+}
+.hvr-radial-in:hover, .hvr-radial-in:focus, .hvr-radial-in:active {
+    color: white;
+    text-decoration: none;
+}
+.hvr-radial-in:hover:before, .hvr-radial-in:focus:before, .hvr-radial-in:active:before {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+/* Rotate Icon Social Media */
+.hvr-icon-rotate {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.hvr-icon-rotate .hvr-icon {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-icon-rotate:hover .hvr-icon, .hvr-icon-rotate:focus .hvr-icon, .hvr-icon-rotate:active .hvr-icon {
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+/* General StyleSheet Contact Us */
+.contact-main-left p{
+    margin: 5px;
+}
+.contact-main-left p a{
+    color: #6a6a6a;
+}
+.contact-main-left p a i{
+    margin-right: 10px;
+}
+.contact-social a {
+    margin: 20px 10px 20px 0px;
+    color: #6a6a6a;
+    font-size: 19px;
+}
+.contact-right-title {
+    font-weight: bold;
+    color: #6a6a6a;
+}
+.contact-input {
+    background: #e7edf4; 
+    width: 100%; 
+    margin-bottom: 23px;
+    padding: 10px 15px;
+    border-radius: 3px;
+}
+#contact-icon-send {
+      display: none;
+      margin-right: 5px;
+}
+.hvr-radial-in:hover #contact-icon-send {
+      display: inline-block;
+}
+#contact-map {
+    border:0;
+    width: 100%;
+    height: 223px;
+}
+  
 
 
 /* Style Sheet For Mobiel Template */

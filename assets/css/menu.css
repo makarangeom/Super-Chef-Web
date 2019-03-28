@@ -3,155 +3,165 @@
     margin: 0;
     padding: 0;
     outline: 0;
-  }
-  .nav {
-    /* background: #0275d8; */
-    min-height: 100px;
-    position: absolute;
-    width: 100%;
-    z-index: 999;
-    position: fixed;
-    top: 0;
-    padding: 0px 30px 0px 30px;
-  }
-  .nav .left {
-    float: left;
-    padding: 10px 120px;
-  }
-  .nav .left li {
-    /* border-bottom: 1px solid #ED5565; */
-    font-size: 14px;
-    float: left;
-  }
-  .nav .left li a {
-    display: block;
-    padding: 10px 15px;
-    line-height: 30px;
-    font-weight: bold;
-  }
-  .nav .left li a:hover { background:#ED5565; }
-  .nav .right {
-    float: right;
-    margin-right: 1em;
-    margin-top: 80px;
-    padding-right: 44px;
-  }
-  .nav .right li {
-    /* border-bottom: 1px solid #ED5565; */
-    font-size: 1rem;
-    float: left;
-  }
-  .nav .right li a {
-    display: block;
-    padding: 10px 15px;
-    line-height: 30px;
-    text-decoration: none; 
-    color: #fff;
-  }
-  .nav .right li a:hover { border-bottom: 2px solid #ef5438; }
-  .toggle-nav { display: none; z-index: 1; }
-  .nav-mobile style { display: block;margin-top:22px; }
-  .logo{
-    width: 120px;
-  }
-  .btn-inner{
-    color: #FFF;
-  }
-  .btn:hover .btn-inner{
-    color: #ED5565;
-  }
+}
+.nav {
+  min-height: 100px;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  position: fixed;
+  top: 0;
+  padding: 0px 30px 0px 30px;
+  background-image: url(http://wp.microthemes.ca/vienna/wp-content/uploads/2016/01/header-gradient.png);
+  background-position: 0px -60px;
+  
+}
+.nav .left {
+  float: left;
+  padding: 10px 120px;
+}
+.nav .left li {
+  font-size: 14px;
+  float: left;
+}
+.nav .left li a {
+  display: block;
+  padding: 10px 15px;
+  line-height: 30px;
+  font-weight: bold;
+}
+.nav .left li a:hover { background:#ED5565; }
+.nav .right {
+  float: right;
+  margin-right: 1em;
+  margin-top: 80px;
+  padding-right: 44px;
+}
+.nav .right li {
+  font-size: 1rem;
+  float: left;
+}
+.nav .right li a {
+  display: block;
+  padding: 10px 15px;
+  line-height: 30px;
+  text-decoration: none; 
+  color: #fff;
+}
+.nav .right li a:hover { color: #ef5438; }
+.toggle-nav { display: none; z-index: 1; }
+.nav-mobile style { display: block;margin-top:22px; }
+.logo{
+  width: 120px;
+}
+.btn-inner{
+  color: #FFF;
+}
+.btn:hover .btn-inner{
+  color: #ED5565;
+}
 .float-right {
     float: right !important;
 }
 
 /* StyleSheet change style when scrolling */
 .fixed-menu {
-  background-color: rgba(0, 0, 0, 0.85);
   min-height: 88px;
 }
 .fixed-menu .right {
   float: right;
   margin-right: 1em;
-  margin-top: 15px;
+  margin-top: 36px;
+  margin-bottom: 0px;
 }
 .fixed-menu .left .logo {
   width: 70px;
 }
 
-/* For sub menu dropdown */
+/* StyleSheet for sub menu dropdown */
 .nav .right li ul li{
   display: none;
 }
+.nav .right li:hover ul {
+  position: absolute;
+z-index: 9999;
+}
 .nav .right li:hover ul li{
   display: block;
-position: relative;
-float: none;
+  position: relative;
+  float: none;
 }
 .nav .right li:hover ul li a{
+  background-color: rgba(0, 0, 0, 0.5);
   line-height: 10px;
+  width: 117px;
+  border-top: 2px solid #ef5438;
 }
 
-/* For active menu */
+/* StyleSheet for active menu */
 .active {
   border-bottom: 2px solid #ef5438;
 }
     
   
   
-  /* Style Sheet For Mobiel Template */
-  @media only screen and (max-width: 768px) {
-    .nav { 
-      /* border-bottom: 1px solid rgba(0,0,0,0.1); */
-      min-height: 50px;
-      padding-right: 0;
-    }
-    .nav>a{
-      color: #FFF;
-      text-decoration: none;
-    }
-    .nav>a:hover{
-      color: #FFF;
-      text-decoration: none;
-    }
-    .logo{
-      width:100px;
-    }
-    .toggle-nav {
-      display: block; 
-      padding: 10px;
-      position: absolute;
-      right: 10px;
-      line-height: 30px;
-      margin-top: 20px;
-      padding-right: 45px;
-    }
-    .toggle-nav:after { content: ' Menu'; }
-    
-    .nav-mobile { display: none;margin-top: -45px;z-index: 999; }
-    .style-mobile {
-      background: #DA4453;
-      top : 51px;
-      position : absolute;
-      width : 100%;
-    }
-    .style-mobile li {
-      display: block;
-      width: 100%;
-    }
-    .nav .right {
-      display: block;
-      float: none;
-      margin: 0em;
-    }
-    .nav .left {
-      display: block;
-      float: none;
-      margin: 0em;
-      padding-left: 50px;
-    }
-
-    /* StyleSheet for change menu when scrolling in Mobile Template */
-
+/* Style Sheet For Mobiel Template */
+@media only screen and (max-width: 768px) {
+  .fixed-menu {
+    background-color: none;
+    height: 0;
+  }
+  .nav { 
+    max-height: 113px;
+    padding-right: 0;
+    background-position: 0px -128px;
+  }
+  .nav>a{
+    color: #FFF;
+    text-decoration: none;
+  }
+  .nav>a:hover{
+    color: #FFF;
+    text-decoration: none;
+  }
+  .logo{
+    width:100px;
+  }
+  .nav .toggle-nav {
+    display: block; 
+    padding: 10px;
+    position: absolute;
+    right: 10px;
+    line-height: 30px;
+    margin-top: 30px;
+    padding-right: 45px;
+  }
+  .fixed-menu .toggle-nav {
+    margin-top: 20px;
+  }
+  .toggle-nav:after { content: ' Menu'; }
+  .nav-mobile { display: none;margin-top: -45px;z-index: 999; }
+  .style-mobile {
+    background-color: rgba(0, 0, 0, 0.5);
+    top : 51px;
+    position : absolute;
+    width : 100%;
+  }
+  .style-mobile li {
+    display: block;
+    width: 100%;
+  }
+  .nav .right {
+    display: block;
+    float: none;
+    margin: 0em;
+  }
+  .nav .left {
+    display: block;
+    float: none;
+    margin: 0em;
+    padding-left: 50px;
+  }
 }
 
 
